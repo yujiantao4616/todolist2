@@ -1,0 +1,24 @@
+{
+  "name": "todolist2",
+  "version": "2.0.0",
+  "description": "todolist version 2.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/assassin6/todolist2.git"
+  },
+  "keywords": [
+    "tomato",
+    "electron",
+    "todolist"
+  ],
+  "author": "yu jiantao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/assassin6/todolist2/issues"
+  },
+  "homepage": "https://github.com/assassin6/todolist2#readme"
+}
