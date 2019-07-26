@@ -9,7 +9,6 @@ const fs = require('fs')
 // 保持对window对象的全局引用，如果不这么做的话，当JavaScript对象被
 // 垃圾回收的时候，window对象将会自动的关闭
 let win;
-const xlsx = require('node-xlsx')
 function createWindow() {
   // 创建浏览器窗口。
   win = new BrowserWindow({
@@ -61,34 +60,3 @@ app.on("activate", () => {
     createWindow();
   }
 });
-
-ipcMain.on('saveMessage',(event,data) => {
-  fs.writeFile('./data.json',data,(err) => {
-    if(err){
-      console.log(err)
-    }
-  })
-})
-ipcMain.on('loadStore',(event,str) => {
-  fs.readFile('./data.json',{encoding:'utf-8'},(err, data) => {
-    if(err){
-      event.sender.send('replyStore', false)
-    } else {
-      event.sender.send('replyStore', data)
-    }
-  })
-})
-ipcMain.on('chooseFile',(event,str) => {
-  dialog.showOpenDialog({
-    title:'选择文件',
-      filters: [
-        { name: 'excel', extensions: ['xlsx'] }
-      ]
-    //defaultPath:"C:\\Users\\俞建涛\\Desktop\\毕业设计"
-  },(filePath) => { 
-    var obj = xlsx.parse(filePath[0]);
-    console.log(JSON.stringify(obj));
-  })
-})
-// 在这个文件中，你可以续写应用剩下主进程代码。
-// 也可以拆分成几个文件，然后用 require 导入。
