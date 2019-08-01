@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Link, HashRouter as Router } from 'react-router-dom';
+import B from './pages/componentB'
+import A from './pages/componentA'
+import C from './pages/componentC'
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div>
+          <Link to='/a'>a</Link>
+          <br />
+          <Link to="/b">b</Link>
+          <br />
+          <Link to="/c">c</Link>
+        </div>
+        <div>
+          <Route component={A} path="/a"></Route>
+          <Route component={B} path="/b"></Route>
+          <Route component={C} path="/c"></Route>
+        </div>
+      </Router>
     </div>
   );
 }
