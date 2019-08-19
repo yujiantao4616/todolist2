@@ -1,0 +1,39 @@
+#winItem {
+    width: auto;
+    height: 100%;
+    padding-right: 8px;
+    box-sizing: border-box;
+    display: flex;
+    float: right;
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#winItem div {
+    padding: 9px;
+    height: 12px;
+    box-sizing: content-box;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+#winItem i {
+    display: inline-block;
+    vertical-align: top;
+    height: 12px;
+}
+
+#winItem div:hover {
+    background-color: #ccc;
+}
+
+#winItem>div:last-child:hover i {
+    color: #fff;
+}
+
+#winItem div:last-child:hover {
+    background-color: #ff4d4f;
+}

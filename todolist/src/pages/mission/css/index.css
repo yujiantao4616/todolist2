@@ -1,0 +1,308 @@
+/* index.js */
+#mission {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.changeView {
+  height: 50px;
+  line-height: 20px;
+  background-color: rgba(0, 176, 223, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  font-family: Roboto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.changeView a {
+  text-decoration: none;
+}
+.toToday {
+  width: 70px;
+  height: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 30px;
+  border-radius: 4px;
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  text-align: center;
+  font-family: Roboto;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+#mission .ant-radio-group-small .ant-radio-button-wrapper{
+  height: 30px;
+  line-height: 30px;
+}
+#mission .changeView_buttons .ant-radio-group-small .ant-radio-button-wrapper{
+  width: 100px;
+}
+.changView_buttons i.anticon-plus{
+  color: #fff;
+  margin-left: 10px;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.dateMission{
+  margin-left: 10px;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.ant-modal-header{
+  display: none;
+  /* ???antd?????????????? */
+}
+.ant-modal-body{
+  padding: 0;
+}
+.addMission_modal_header{
+  height: 46px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 11px;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+.addMission_modal_header span:last-child{
+  display: inline-block;
+  height: 30px;
+  width: 51px;
+  line-height: 28px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.addMission_modal_body{
+  padding: 0 20px;
+  padding-bottom:20px;
+}
+.addMission_modal_body .mission_name{
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.addMission_modal_body .mission_name div{
+  height: 30px;
+}
+.addMission_modal_body .mission_name div input{
+  height: 30px;
+  box-sizing: border-box;
+  padding-left: 6px;
+  border: none;
+  border-bottom: 1px solid #bbb;
+}
+.addMission_modal_body .mission_name .mission_checkBox{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  overflow: visible;
+  margin-right: 16px;
+  box-sizing: border-box;
+}
+.addMission_modal_body .mission_name .mission_checkBox i{
+  font-size: 32px;
+  vertical-align: .30rem;
+}
+.mission_items{
+  margin-top: 20px;
+}
+
+.mission_item {
+  max-width: 90%;
+  display: flex;
+  margin-bottom: 16px;
+  justify-content: space-between;
+}
+.mission_items :last-child{
+  margin-bottom: 0px;
+}
+.item_name{
+  font-size: 16px;
+}
+.change_date {
+  margin-right: 10px;
+}
+.change_date_picker{
+  position: absolute;
+  left: 165px;
+  opacity: 0;
+  z-index: 99;
+  width: 100px;
+}
+/* mission_type */
+.addMission {
+  height: 81px;
+  margin-bottom: 10px;
+  transition: all .2s;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 5px;
+}
+.addMission > div{
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addMission_hide{
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+  height: 0;
+}
+
+.addMission input{
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0;
+}
+.wran_input input{
+  border:1px solid #ff4d4f;
+}
+.addMission input:focus{
+  border: none;
+}
+#mission_degree,
+#mission_type {
+  flex: 1;
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+.mission_degree_item{
+  position: relative;
+  overflow-y: auto;
+}
+.mission_degree_item::-webkit-scrollbar{
+  display: none;
+}
+#mission_degree>div {
+  width: 360px;
+  height: 210px;
+  line-height: 20px;
+  border-radius: 2px 2px 2px 2px;
+  border: 1px solid rgba(187, 187, 187, 1);
+  padding: 0 10px;
+}
+
+.mission_degree {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: #fff;
+  justify-content: space-between;
+  height: 34px;
+  align-items: center;
+}
+.mission_type_container{
+  height: 100%;
+  border: 1px solid #BBBBBB;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 25px;
+  overflow-x: auto;
+  position: relative;
+}
+.mission_type_container::-webkit-scrollbar{
+  display: none;
+}
+.mission_type_container .mission_types {
+  width: 200px;
+  height: 100%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid #BBBBBB;
+  margin-right: 30px;
+}
+.mission_type_container .mission_types:last-child{
+  height: 50px;
+  border-bottom: none;
+}
+.mission_type_container .mission_types:last-child{
+  margin: 0;
+}
+.mission_type_name{
+  width: 100%;
+  font-size: 17px;
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid rgba(176, 172, 172, 1);
+}
+.scrollPart{
+  position: absolute;
+  top: 20px;
+  bottom:20px;
+  transition: all .1s;
+}
+/* component missions */
+.missions {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(16, 16, 16, 1);
+  font-size: 14px;
+  font-family: Roboto;
+  position: relative;
+  padding-left: 18px;
+  border: 1px solid rgba(176, 172, 172, 1);
+  position: relative;
+  transition: all .3;
+}
+.missions i.deleteIcon{
+  position: absolute;
+  right: 5px;
+}
+.checkBox i{
+  font-size: 18px;
+}
+.colorBlock {
+  width: 10px;
+  height: 38px;
+  border-radius: 4px 0px 0px 4px;
+  position: absolute;
+  left: 0;
+}
+
+.checkBox {
+  height: 22px;
+  width: 22px;
+  margin-right: 10px;
+  border: 1px solid #938E8E;
+  border-radius: 4px;
+}
+.missionName {
+  position: absolute;
+  left: 45px;
+  right: 70px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

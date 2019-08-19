@@ -1,0 +1,130 @@
+#ls .topBar {
+    height: 40px;
+    width: 100%;
+    -webkit-app-region: drag;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8px;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: bold;
+}
+
+#ls {
+    position: absolute;
+    background-image: url(../img/timg.jpg);
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    font-size: 16px;
+}
+
+#ls .login .headImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+#ls .containerLs {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+#ls .lsContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+#ls .lsContentBox>div {
+    display: grid;
+    position: relative;
+}
+
+#ls .lsContentBox>div>span span,
+#ls .lsContentBox>div>span i {
+    color: #ddd;
+    margin-right: 10px;
+}
+
+#ls .lsContentBox input {
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    height: 30px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+#ls .lsContentBox input::placeholder {
+    color: #ddd;
+}
+
+#ls .lsContentBox button {
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    background-color: #00B0DF;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #ddd;
+    font-size: 16px;
+}
+
+#ls .lsContentBox>div>div {
+    display: flex;
+    height: 20px;
+    justify-content: space-between;
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+#ls .lsContentBox>div>div span {
+    transition: .3s;
+}
+
+#ls .lsContentBox>div>div span:hover {
+    font-size: 16px;
+}
+
+#ls .topBar .title i {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#ls .topBar .title {
+    -webkit-app-region: no-drag;
+}
+
+#ls button.sendMessageCode {
+    height: 30px;
+    font-size: 12px;
+    width: 72px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 34px;
+}
+
+#ls .welcomSlogan {
+    color: #ddd;
+    font-size: 28px;
+    display: inline-block;
+    margin-bottom: 60px;
+}

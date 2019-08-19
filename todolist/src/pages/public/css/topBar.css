@@ -1,0 +1,35 @@
+#topBar {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+#topBar>div:first-child a{
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    width: 64px;
+    margin-left: 30px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+#topBar a:hover{
+    border: 1px solid #00B0DF;
+}
+#topBar a:first-child{
+    margin: 0;
+}
+#topBar .dropDown{
+    position: absolute;
+    right: 20px;
+    
+}
+#topBar .dropDown img{
+    height: 36px;
+    width: 36px;
+    border-radius: 18px;
+}

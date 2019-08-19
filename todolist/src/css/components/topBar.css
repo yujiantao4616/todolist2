@@ -1,0 +1,49 @@
+#topBar {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
+}
+
+#topBar nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#topBar nav>div {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+#topBar nav>div:first-child a {
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    width: 64px;
+    color: black;
+    text-align: center;
+    line-height: 28px;
+    box-sizing: border-box;
+    border: 1px solid white;
+}
+
+#topBar nav>div a {
+    -webkit-app-region: no-drag;
+}
+
+#topBar nav>div a:hover {
+    background-color: #00B0DF;
+    border-radius: 6px;
+    color: #fff;
+}
+
+#topBar a:first-child {
+    margin: 0;
+}

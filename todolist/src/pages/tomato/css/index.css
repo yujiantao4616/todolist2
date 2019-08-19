@@ -1,0 +1,156 @@
+#tomato {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* For demo */
+#tomato .ant-carousel {
+  height: 100%;
+}
+
+.ant-carousel .slick-slide {
+  height: 516px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+.slider img{
+  margin: auto;
+}
+#tomato .arrow{
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+}
+#tomato .arrow.left{
+  left: 20px;
+}
+#tomato .arrow.right{
+  right: 20px;
+}
+#tomato .tapBar{
+  height: 50px;
+  background-color: #F98995;
+  padding: 9px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#tomato .mainContent{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#tomato .tomatoContainer {
+  position: absolute;
+  border: 1px solid #bbb;
+  top: 62px;
+  bottom:12px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+}
+.tomatoItem{
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tomatoItem:first-child{
+  padding: 15px;
+  border-right: 1px solid #bbb;
+  padding-top: 37px;
+}
+.tomatoItem:last-child{
+  display: flex;
+  flex-direction: column;
+}
+.tomatoItem:last-child>div{
+  width: 100%;
+  padding: 15px;
+}
+.tomatoItem:last-child>div:first-child{
+  display: flex;
+  justify-content: space-evenly;
+}
+.tomatoItem:last-child>div:first-child div{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.tomatoItem:last-child>div:not(:last-child){
+  border-bottom:1px solid #bbb;
+}
+.tomatoName{
+  font-size: 26px;
+  word-spacing: 2px;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#tomato .tomatoClock{
+  height: 187px;
+  width: 187px;
+  margin-top: 40px;
+  background-image: url('../../public/image/tomato.jpg');
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timeControl{
+  font-size: 26px;
+}
+.tomato_title{
+  padding: 0 15px;
+  display: flex;
+  border-bottom: 1px solid #bbb;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.tomato_title img{
+  height: 24px;
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+.tomato_history{
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1px solid #bbb;
+}
+
+.tomato_content {
+  overflow: auto;
+  padding: 15px;
+}
+.tomato_history_item{
+  border: 1px dashed #bbb;
+  border-radius: 4px;
+  min-height: 70px;
+  padding: 5px 10px;
+  display: flex;
+}
+.tomato_history_item:not(:last-child){
+  margin-bottom: 15px;
+}
+.tomato_content::-webkit-scrollbar{
+  display: none;
+}
