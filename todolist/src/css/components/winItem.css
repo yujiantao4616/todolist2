@@ -10,7 +10,9 @@
     align-items: center;
 }
 
-
+.data{
+    width:100px
+}
 
 #winItem div {
     padding: 9px;
