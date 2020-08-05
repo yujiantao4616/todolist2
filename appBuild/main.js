@@ -12,6 +12,7 @@ class todolist {
   constructor() {
     this.init()
   }
+  // test for git
   async init() {
     app.on("ready", this.initls);
     // 当全部窗口关闭时退出。
